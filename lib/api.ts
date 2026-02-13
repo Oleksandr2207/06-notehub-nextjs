@@ -4,12 +4,10 @@ import axios from 'axios';
 const BASE_URL = 'https://notehub-public.goit.study/api';
 const TOKEN = process.env.NEXT_PUBLIC_NOTEHUB_TOKEN
 
-// if (!TOKEN) {
-//   throw new Error('NOTEHUB TOKEN missing');
-// }
+
 
 axios.defaults.baseURL = BASE_URL;
-axios.defaults.headers.common.Authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9zcG9ub21hcmVua28wOUBnbWFpbC5jb20iLCJpYXQiOjE3NzAwNDUzODJ9.u1iRGj5YlnyVdJjWF1MquJLfqnEdaqBz3087h_HhJSY`;
+axios.defaults.headers.common.Authorization = `Bearer ${TOKEN}`;
 
 
 
