@@ -9,7 +9,7 @@ if (!TOKEN) {
 }
 
 axios.defaults.baseURL = BASE_URL;
-axios.defaults.headers.common.Authorization = `Bearer ${TOKEN}`;
+axios.defaults.headers.common.Authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9zcG9ub21hcmVua28wOUBnbWFpbC5jb20iLCJpYXQiOjE3NzAwNDUzODJ9.u1iRGj5YlnyVdJjWF1MquJLfqnEdaqBz3087h_HhJSY`;
 
 
 
